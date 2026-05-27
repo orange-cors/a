@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="banner">
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <div class="search">
+                <div>
+                    <input class="text-input" type="text"  value="Search">
+                </div>
+                <div>
+                    <select class="category">
+                        <option>Categories</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="search-icon">Q</button>
+                </div>
+            </div>
+            <div class="cart">
+                <p> C 0 Item(S) - $0.00</p>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Women v</a></li>
+                <li class="has-sub">
+                    <a href="#">Men v</a>
+                    <ul class="submenu">
+                        <li><a href="#">Coats (0)</a></li>
+                        <li><a href="#">T-Shirts (0)</a></li>
+                        <li><a href="#">Tennis (0)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Jewelry</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Clothing v</a></li>
+                <li><a href="#">Jeans</a></li>
+                <li><a href="#">Clothing v</a></li>
+                <li><a href="#">Jeans</a></li>
+                <li><a href="#">Clothing v</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div class="btn">
+                <div class="btn-lf">
+                    <div class="blbt">
+                        <button>=</button>
+                        <button>=</button>
+                    </div>
+                    <select class="df">
+                        <option>Default</option>
+                    </select>
+                    <select class="nine">
+                        <option>9</option>
+                    </select>
+                </div>
+                <div class="btn-rg">
+                    <button class="num">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>></button>
+                    <button>>|</button>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <img src="card.png" alt="">
+                    <div class="detail">
+                        <p>Apple Cinema 30"</p>
+                        <p>*****</p>
+                        <p><span style="color: red;">$110.00 </span><span style="text-decoration:line-through; font-size: 13px;">$122.00</span></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="card.png" alt="">
+                    <div class="detail">
+                        <p>Apple Cinema 30"</p>
+                        <p>*****</p>
+                        <p><span style="color: red;">$110.00 </span><span style="text-decoration:line-through; font-size: 13px;">$122.00</span></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="card.png" alt="">
+                    <div class="detail">
+                        <p>Apple Cinema 30"</p>
+                        <p>*****</p>
+                        <p><span style="color: red;">$110.00 </span><span style="text-decoration:line-through; font-size: 13px;">$122.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    background-color: white;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 16px;
+    padding-top: 24px;
+    background-image: url("t.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.search{
+    display: flex;
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 2px;
+}
+
+.text-input{
+    height: 25px;
+    width: 200px;
+    border: none;
+    padding-left: 22px;
+}
+
+.category{
+    height: 25px;
+    width: 90px;
+    border: none;
+    border-left: 1px solid rgb(7, 7, 7);
+}
+
+.search-icon{
+    height: 25px;
+    width: 30px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+}
+
+.cart{
+    background-color: #FF3399;
+    color: white;
+    height: 25px;
+    width: 150px;
+    text-align: center;
+}
+
+.menu >ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.menu li{
+    list-style: none;
+    flex: 1;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu >ul >li >a{
+    color: white;
+    display: block;
+    padding: 17px 0;
+    text-align: center;
+}
+
+.has-sub{
+    position: relative;
+}
+
+.menu >ul >li:hover{
+    background-color: #FF3399;
+}
+
+
+.submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    padding-top: 10px;
+    width: 100px;
+}
+
+.submenu a{
+    color: black;
+}
+
+.has-sub:hover .submenu{
+    display: block;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.btn-lf{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-rg{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+.blbt button{
+    height: 25px;
+    width: 25px;
+}
+
+.df{
+    height: 25px;
+    width: 150px;
+}
+
+.nine{
+    height: 25px;
+    width: 50px;
+}
+
+.btn-rg button{
+    height: 25px;
+    width: 25px;
+}
+
+.num{
+    background-color: black;
+    color: white;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+    margin: auto;
+}
+
+.card img{
+    margin-top: 10px;
+    width: 400px;
+    height: 370px;
+}
+
+.detail{
+    background-color: rgba(0, 98, 155, 0.449);
+    text-align: center;
+    color: white;
+}
+
+Cau2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm số từ 4 chữ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    function Tim(){
+        let chuoi = document.getElementById("inp").value;
+        chuoi = chuoi.trim();
+        let dem = 0;
+        if(chuoi!=""){
+            let mangchuoi = chuoi.split(/\s+/);
+            for(let i = 0;i<mangchuoi.length;i++){
+                if(mangchuoi[i].length==4 && mangchuoi[i].toLowerCase().startsWith("m")){
+                    dem++;
+                }
+            }
+        }
+        document.getElementById("oup").value = dem;
+    }
+
+    function Cancel(){
+        document.getElementById("inp").value = "";
+        document.getElementById("oup").value = "";
+        document.getElementById("inp").focus();
+    }
+</script>
+<body>
+    <div class="container">
+        <div class="text-input">
+            <label for="">Nhập chuỗi:</label>
+            <input type="text" id="inp">
+        </div>
+        <div class="text-input">
+            <label for="">Số từ có 4 ký tự:</label>
+            <input type="text" id="oup" readonly>
+        </div>
+        <div class="btn">
+            <button onclick="Tim()">Tìm</button>
+            <button onclick="Cancel()">Hủy bỏ</button>
+        </div>
+    </div>
+</body>
+</html>
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    border: 1px solid black;
+    width: 490px;
+    margin: auto;
+    padding: 10px 100px;
+}
+
+.text-input{
+    display: flex;
+}
+
+.text-input label{
+    font-weight: bold;
+    width: 300px;;
+}
+
+.text-input input[type="text"]{
+    width: 450px;
+    margin-left: 100px;
+    margin-bottom: 3px;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 4px;
+}
