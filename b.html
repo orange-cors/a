@@ -1,3 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Cửa Hàng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/120x40/336699/FFFFFF?text=Trendz" alt="Logo">
+            </div>
+            
+            <div class="search-box">
+                <select class="search-select">
+                    <option>All Categories</option>
+                    <option>Laptops</option>
+                    <option>Accessories</option>
+                </select>
+                <input type="text" class="search-input" placeholder="Search For Product">
+                <button class="search-btn">Search</button>
+            </div>
+
+            <div class="header-actions">
+                <a href="#" class="cart-link">Cart [Giỏ]<span class="cart-count">0</span></a>
+                <a href="#" class="user-icon">[User]</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        
+        <aside class="sidebar">
+            <h2 class="menu-title">ALL CATEGORY</h2>
+            <ul class="menu-level-1">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li class="has-submenu">
+                    <a href="#">Laptops <span class="arrow">></span></a>
+                    <ul class="submenu">
+                        <li><a href="#">Dell (0)</a></li>
+                        <li><a href="#">Men (0)</a></li>
+                        <li><a href="#">Purse (0)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Shocks</a></li>
+                <li><a href="#">Cloth</a></li>
+                <li><a href="#">Cosmetic</a></li>
+                <li><a href="#">Desktops <span class="arrow">></span></a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">MP3 Players <span class="arrow">></span></a></li>
+                <li><a href="#">Perfume</a></li>
+                <li><a href="#">+ MORE</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div class="product-grid">
+                
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Vòng đeo tay" class="product-img">
+                    <a href="#" class="product-name">Vòng đeo tay Galaxy Fit-e hàng chính hãng</a>
+                    <div class="price-section">
+                        <div class="price-info">
+                            <span class="new-price">590,000 đ</span>
+                            <span class="discount">- 40%</span>
+                            <br>
+                            <span class="old-price">990,000 đ</span>
+                        </div>
+                        <button class="add-to-cart-btn">[Mua]</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Ốp lưng" class="product-img">
+                    <a href="#" class="product-name">Ốp lưng Led cover Galaxy S10+ hàng chính hãng</a>
+                    <div class="price-section">
+                        <div class="price-info">
+                            <span class="new-price">690,000 đ</span>
+                            <span class="discount">- 42%</span>
+                            <br>
+                            <span class="old-price">1,100,000 đ</span>
+                        </div>
+                        <button class="add-to-cart-btn">[Mua]</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Ốp lưng S8" class="product-img">
+                    <a href="#" class="product-name">Ốp lưng Alcantara Galaxy S8+ chính hãng giá shock</a>
+                    <div class="price-section">
+                        <div class="price-info">
+                            <span class="new-price">249,000 đ</span>
+                            <span class="discount">- 72%</span>
+                            <br>
+                            <span class="old-price">890,000 đ</span>
+                        </div>
+                        <button class="add-to-cart-btn">[Mua]</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Balo" class="product-img">
+                    <a href="#" class="product-name">Balo laptop Targus TSB162AP chính hãng hàng thanh lý</a>
+                    <div class="price-section">
+                        <div class="price-info">
+                            <span class="new-price">299,000 đ</span>
+                            <span class="discount">- 97%</span>
+                            <br>
+                            <span class="old-price">1,000,000 đ</span>
+                        </div>
+                        <button class="add-to-cart-btn">[Mua]</button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Đồng hồ" class="product-img">
+                    <a href="#" class="product-name">Đồng hồ Galaxy Watch Active chính hãng SSVN</a>
+                    <div class="price-section">
+                        <div class="price-info">
+                            <span class="new-price">4,890,000 đ</span>
+                            <span class="discount">- 11%</span>
+                            <br>
+                            <span class="old-price">5,490,000 đ</span>
+                        </div>
+                        <button class="add-to-cart-btn">[Mua]</button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
+
 /* Thiết lập chung */
 * {
     margin: 0;
